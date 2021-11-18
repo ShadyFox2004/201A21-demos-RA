@@ -1,17 +1,21 @@
-public class PassagerTest {
-    public PassagerTest() {
+public class PassagerTest
+{
+    public PassagerTest()
+    {
         saisirEtAfficherUnPassager();
         //testerPassager();
     }
 
-    private void saisirEtAfficherUnPassager() {
+    private void saisirEtAfficherUnPassager()
+    {
         Passager p;
         int age;
         int poids;
         boolean poidEtAgeEstValide;
 
         //saisir age et poids
-        do {
+        do
+        {
             age = Util.lireEntier("Quel est l'âge du passager ? ");
             poids = Util.lireEntier("Quel est le poids du passager (en livre) ? ");
 
@@ -26,7 +30,8 @@ public class PassagerTest {
         System.out.println(p);
     }
 
-    private void testerPassager() {
+    private void testerPassager()
+    {
         Passager p;
 
         p = new Passager(); //appel le constructeur par défaut
@@ -36,7 +41,8 @@ public class PassagerTest {
         System.out.println(p);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         new PassagerTest();
     }
 }

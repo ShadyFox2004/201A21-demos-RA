@@ -1,4 +1,5 @@
-public class Passager {
+public class Passager
+{
     public static final int POIDS_DEFAUT = 300;
     public static final int AGE_DEFAUT = 50;
 
@@ -6,45 +7,54 @@ public class Passager {
     private int age;
 
     //Constructeur par défaut
-    public Passager() {
+    public Passager()
+    {
         this(POIDS_DEFAUT, AGE_DEFAUT);
     }
 
-    public Passager(int poids, int age) {
+    public Passager(int poids, int age)
+    {
         setPoids(poids);
         setAge(age);
     }
 
-    public int getPoids() {
+    public int getPoids()
+    {
         return poids;
     }
 
-    public void setPoids(int poids) {
+    public void setPoids(int poids)
+    {
         if (!poidsEstValide(poids))
             throw new IllegalArgumentException("Un poids négatif n'est pas valide.");
         this.poids = poids;
     }
 
-    public int getAge() {
+    public int getAge()
+    {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(int age)
+    {
         if (!ageEstValide(age))
             throw new IllegalArgumentException("Un age négatif n'est pas valide.");
         this.age = age;
     }
 
-    public static boolean poidsEstValide(int poids) {
+    public static boolean poidsEstValide(int poids)
+    {
         return 0 <= poids;
     }
 
-    public static boolean ageEstValide(int age) {
+    public static boolean ageEstValide(int age)
+    {
         return 0 <= age;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Passager{" +
                 "poids=" + poids +
                 ", age=" + age +
@@ -53,10 +63,10 @@ public class Passager {
 
     ///////////////////////////// PAS MONTRER ÇA POUR LE MOMENT//////////////////////
     /**
-//     * Retourne Vrai si le passager reçu en argument est plus pesant que l'objet courant.
-//     * @param passager
-//     * @return Vrai si le passager reçu en argument est plus pesant que l'objet courant
-//     */
+     //     * Retourne Vrai si le passager reçu en argument est plus pesant que l'objet courant.
+     //     * @param passager
+     //     * @return Vrai si le passager reçu en argument est plus pesant que l'objet courant
+     //     */
 //    public boolean estPlusPesant(Passager passager) {
 //        boolean estPlusLourd;
 //        estPlusLourd = this.poids < passager.getPoids();
