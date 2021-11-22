@@ -1,3 +1,8 @@
+/**
+ * Passager d'un avion
+ * @version 201A21 - V1.1
+ * @author robert Aubé
+ */
 public class Passager
 {
     public static final int POIDS_DEFAUT = 300;
@@ -12,6 +17,11 @@ public class Passager
         this(POIDS_DEFAUT, AGE_DEFAUT);
     }
 
+    /**
+     * PArmet de créer un passage
+     * @param poids poids du passager
+     * @param age age du passager
+     */
     public Passager(int poids, int age)
     {
         setPoids(poids);
@@ -30,11 +40,19 @@ public class Passager
         this.poids = poids;
     }
 
+    /**
+     * Retourne <b>l'âge</b>
+     * @return âge
+     */
     public int getAge()
     {
         return age;
     }
 
+    /**
+     * Permet de mettre à jour l'age du passager
+     * @param age age diu passager à l'embargquement
+     */
     public void setAge(int age)
     {
         if (!ageEstValide(age))
