@@ -2,8 +2,21 @@ public class PassagerTest
 {
     public PassagerTest()
     {
-        saisirEtAfficherUnPassager();
+        testerEquals();
+        //saisirEtAfficherUnPassager();
         //testerPassager();
+    }
+
+    private void testerEquals() {
+        Passager p1 = new Passager();
+        Passager pNull = null;
+        Passager p2 = new Passager();
+
+        System.out.println("p1.equals(p1) -> " + p1.equals(p1));
+        System.out.println("p1.equals(pNull) -> " + p1.equals(pNull));
+        System.out.println("p1.equals(p2) -> " + p1.equals(p2));
+        System.out.println("p1.equals(new Avion(1)) -> " + p1.equals(new Avion(1)));
+        System.out.println("p1.equals(p2) -> " + p1.equals(p2));
     }
 
     private void saisirEtAfficherUnPassager()
