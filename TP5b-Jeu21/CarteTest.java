@@ -206,38 +206,38 @@ public class CarteTest {
         afficherResultatDuTest();
     }
 
-//    private void tester_equals() {
-//        Carte c2pi = new Carte(2, "pique");
-//        Carte c1pi = new Carte(1, "pique");
-//        Carte c2co = new Carte(2, "coeur");
-//        Carte c2piV2 = new Carte(2, "pique");
-//        Carte cNull = null;
-//
-//        System.out.println("tester_equals()");
-//        descriptionTest = "equals : la comparaison de la même instance de carte retourne true";
-//        testReussi = c2pi.equals(c2pi);
-//        afficherResultatDuTest();
-//
-//        descriptionTest = "equals : la comparaison avec une carte null retourne false";
-//        testReussi = !c2pi.equals(cNull);
-//        afficherResultatDuTest();
-//
-//        descriptionTest = "equals : la comparaison d'une variable de types différents retourne false";
-//        testReussi = !c2pi.equals("chat");
-//        afficherResultatDuTest();
-//
-//        descriptionTest = "equals : la comparaison de 2 cartes de valeurs différentes retourne false";
-//        testReussi = !c2pi.equals(c1pi);
-//        afficherResultatDuTest();
-//
-//        descriptionTest = "equals : la comparaison de 2 cartes de couleurs différentes retourne false";
-//        testReussi = !c2pi.equals(c2co);
-//        afficherResultatDuTest();
-//
-//        descriptionTest = "equals : la comparaison de 2 cartes de même couleur, de même valeur et d'instances différentes retourne true.";
-//        testReussi = c2pi.equals(c2piV2);
-//        afficherResultatDuTest();
-//    }
+    private void tester_equals() {
+        Carte c2pi = new Carte(2, "pique");
+        Carte c1pi = new Carte(1, "pique");
+        Carte c2co = new Carte(2, "coeur");
+        Carte c2piV2 = new Carte(2, "pique");
+        Carte cNull = null;
+
+        System.out.println("tester_equals()");
+        descriptionTest = "equals : la comparaison de la même instance de carte retourne true";
+        testReussi = c2pi.equals(c2pi);
+        afficherResultatDuTest();
+
+        descriptionTest = "equals : la comparaison avec une carte null retourne false";
+        testReussi = !c2pi.equals(cNull);
+        afficherResultatDuTest();
+
+        descriptionTest = "equals : la comparaison d'une variable de types différents retourne false";
+        testReussi = !c2pi.equals("chat");
+        afficherResultatDuTest();
+
+        descriptionTest = "equals : la comparaison de 2 cartes de valeurs différentes retourne false";
+        testReussi = !c2pi.equals(c1pi);
+        afficherResultatDuTest();
+
+        descriptionTest = "equals : la comparaison de 2 cartes de couleurs différentes retourne false";
+        testReussi = !c2pi.equals(c2co);
+        afficherResultatDuTest();
+
+        descriptionTest = "equals : la comparaison de 2 cartes de même couleur, de même valeur et d'instances différentes retourne true.";
+        testReussi = c2pi.equals(c2piV2);
+        afficherResultatDuTest();
+    }
 
     public static void main(String[] args) {
         new CarteTest();

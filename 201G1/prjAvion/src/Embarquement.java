@@ -1,3 +1,5 @@
+import Utilitaire.Util;
+
 public class Embarquement
 {
     private Avion avion;
@@ -23,8 +25,8 @@ public class Embarquement
 
 //        do
 //        {
-//            poids = Util.lireEntier("Quel est le poids du passager ? ");
-//            age = Util.lireEntier("Quel est l'âge du passager ? ");
+//            poids = Utilitaire.Util.lireEntier("Quel est le poids du passager ? ");
+//            age = Utilitaire.Util.lireEntier("Quel est l'âge du passager ? ");
 //            poidEtAgeEstValide = Passager.ageEstValide(age) && Passager.poidsEstValide(poids);
 //
 //            if (!poidEtAgeEstValide)

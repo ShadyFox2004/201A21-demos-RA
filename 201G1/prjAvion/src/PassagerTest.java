@@ -1,3 +1,5 @@
+import Utilitaire.Util;
+
 public class PassagerTest
 {
     public PassagerTest()
