@@ -1,8 +1,10 @@
+import Utilitaire.*;
+
 public class Embarquement {
     private AvionArrayList avion;
 
     public Embarquement() {
-        int nbPassagerAEmbarquer = Util.lireEntierValide("Combien de passager dans l'avion ? ", 0, 5000);
+        int nbPassagerAEmbarquer = Util.lireInt("Combien de passager dans l'avion ? ");
         avion = new AvionArrayList(nbPassagerAEmbarquer);
 
         for (int i = 0; i < nbPassagerAEmbarquer; i++) {
@@ -18,8 +20,8 @@ public class Embarquement {
         boolean poidEtAgeEstValide;
 
         do {
-            poids = Util.lireEntier("Quel est le poids du passager ? ");
-            age = Util.lireEntierValide("Quel est l'age du passager ? ", 0, 200);
+            poids = Util.lireInt("Quel est le poids du passager ? ");
+            age = Util.lireInt("Quel est l'age du passager ? ");
             poidEtAgeEstValide = Passager.ageEstValide(age) && Passager.poidsEstValide(poids);
 
             if (!poidEtAgeEstValide)
